@@ -3,15 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"
+    ></script>
+    <script
+      defer
+      src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.js"
+    ></script>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
     <title>Landing Page</title>
   </head>
   <body>
+    <!-- Header -->
+
     <header id="header">
       <div id="logo">
         <img src="./assets/Images/logo.png" alt="logo" />
@@ -28,7 +45,9 @@
     </header>
 
     <main>
-      <section id="section-1" class="flex-center">
+      <!-- Section 1 -->
+
+      <section id="section-1">
         <div id="section-1-des">
           <h2 class="heading-2">Lorem ipsum dolor sit amet consectetur</h2>
           <p class="para">
@@ -42,6 +61,8 @@
           <img src="./assets/Images/1.png" alt="img-1" />
         </div>
       </section>
+
+      <!-- SECTION 2 -->
 
       <section id="section-2" class="flex-center">
         <div id="section-2-des" class="flex-center">
@@ -81,60 +102,175 @@
           </div>
         </div>
       </section>
+
+      <!-- SECTION 3 -->
+
       <section id="section-3">
         <div id="section-3-des">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="heading-2">Lorem ipsum dolor sit amet consectetur.</h2>
           <p class="para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
             similique nisi. Temporibus et, expedita praesentium neque qui
             doloremque assumenda itaque.
           </p>
         </div>
+
+        <!-- CARDS -->
+
         <div id="section-3-cards">
-          <div>
-            <h3>Free</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-              dolorum accusamus vero quia qui impedit?
+          <!-- Card 1 -->
+
+          <div class="section-3-card">
+            <h3 class="card-heading">Basic</h3>
+            <p class="card-des">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
-            <ul>
-              <li>
-                <div>
+            <p class="card-des">
+              <span class="card-heading">300$</span> per user / per year
+            </p>
+            <ul class="card-list">
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des uncheck">
                   Lorem ipsum dolor sit amet.
                 </div>
               </li>
-              <li>
-                <div>
-
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
                 </div>
-                <div>
+                <div class="card-icon-des uncheck">
                   Lorem ipsum dolor sit amet.
                 </div>
               </li>
-              <li>
-                <div>
-
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
                 </div>
-                <div>
-                  Lorem ipsum dolor sit amet.
-                </div>
-              </li>
-              <li>
-                <div>
-
-                </div>
-                <div>
+                <div class="card-icon-des uncheck">
                   Lorem ipsum dolor sit amet.
                 </div>
               </li>
             </ul>
-            <button>Start NOW</button>
+            <button>Start 7 days trial</button>
+          </div>
+
+          <!-- Card 2 -->
+
+          <div class="section-3-card active-card">
+            <h3 class="card-heading">Premium</h3>
+            <p class="card-des">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="card-des">
+              <span class="card-heading">450$</span> per user / per year
+            </p>
+            <ul class="card-list">
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des uncheck">
+                  Lorem ipsum dolor sit amet.
+                </div>
+              </li>
+            </ul>
+            <button>Start 7 days trial</button>
+          </div>
+
+          <!-- Card 3 -->
+
+          <div class="section-3-card">
+            <h3 class="card-heading">Ultimate</h3>
+            <p class="card-des">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+            <p class="card-des">
+              <span class="card-heading">500$</span> per user / per year
+            </p>
+            <ul class="card-list">
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+              <li class="card-row">
+                <div class="card-icon">
+                  <i class="fas fa-check-square"></i>
+                </div>
+                <div class="card-icon-des">Lorem ipsum dolor sit amet.</div>
+              </li>
+            </ul>
+            <button>Start 7 days trial</button>
           </div>
         </div>
       </section>
-      <section id="section-4"></section>
+
+      <!-- Section 4 -->
+
+      <section id="section-4">
+        <div id="section-4-container">
+          <div id="section-4-des">
+            <h2 class="heading-2">Subscribe</h2>
+            <p class="para">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi, voluptatibus molestiae. Natus eveniet optio nihil?
+            </p>
+          </div>
+          <div id="section-4-input">
+            <input type="email" id="subscribe" placeholder="Your Email" />
+            <button class="btn">SUBSCRIBE</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer id="footer"></footer>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+      <div class="container">
+        <p>&Sharkawy_Udacity</p>
+      </div>
+    </footer>
 
     <script src="./JS/app.js"></script>
   </body>
