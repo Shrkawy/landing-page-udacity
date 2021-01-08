@@ -16,6 +16,7 @@ html {
   font-size: 12px;
   line-height: 2rem;
   font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -31,7 +32,7 @@ main {
   margin: auto;
 }
 
-/* Main Classes */
+/* Common Classes */
 
 .btn {
   width: 90px;
@@ -58,12 +59,6 @@ main {
   color: #120059;
 }
 
-.heading-3 {
-  margin-left: 10px;
-  font-size: 25;
-  line-height: 3rem;
-  color: #120059;
-}
 
 .para {
   font-size: 13px;
@@ -76,14 +71,23 @@ main {
   align-items: center;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Header */
 
 #header {
-  width: 80%;
-  margin-top: 10px;
+  width: 100%;
   height: 45px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  position: fixed;
+  top:0;
+  background-color: #120059e8;
+  transition: top 0.5s;
 }
 
 #logo {
@@ -94,8 +98,6 @@ main {
 }
 
 #nav {
-  display: flex;
-  flex-direction: row;
   justify-content:space-between;
 }
 
@@ -104,25 +106,29 @@ main {
   height: 100%;
 }
 
-#nav-list li {
+#nav-list li a {
   margin: 0 15px;
   cursor: pointer;
-  color: #120059;
+  color: #fff;
+  text-decoration: none;
 }
 
 #nav .btn {
-  margin-top: 7px;
+  margin: 5px;
+}
+
+#nav-list li a.active,
+#nav-list li a:active,
+#nav-list li a:hover {
+  color: #0db9f2;
 }
 
 
 /* section 1 */
 
 #section-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 80vh;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 
@@ -143,20 +149,11 @@ main {
 
 #section-2 {
   margin-top: 20vh;
-  flex-direction: column;
 }
 
-#section-2-des {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 #section-2-cards {
   margin-top: 35px;
-  display: flex;
-  align-items: center;
   justify-content: space-evenly;
 }
 
@@ -183,6 +180,11 @@ main {
   height: 70px;
 }
 
+.heading-3 {
+  margin: 7px;
+  color: #120059;
+}
+
 .card p.card-des {
   font: 7px;
   margin-left: 10px;
@@ -199,17 +201,10 @@ main {
 
 #section-3 {
   margin-top: 25vh;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #section-3-des {
   max-width: 70%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -290,14 +285,9 @@ main {
   margin-top: 25vh;
   padding-bottom: 15vh;
   background: #c0dfed8c;
-  display: flex;
-  justify-content: center;
 }
 
 #section-4-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   width: 85%;
 }
 
@@ -348,13 +338,5 @@ main {
   background-color: #120059;
   height: 45px;
   color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
-.container p {
-
-}
-
 
