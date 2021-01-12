@@ -128,7 +128,7 @@ main {
 
 #section-1 {
   min-height: 80vh;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 
@@ -148,7 +148,7 @@ main {
 /* Section 2 */
 
 #section-2 {
-  margin-top: 20vh;
+  padding-top: 20vh;
 }
 
 
@@ -200,7 +200,7 @@ main {
 /* section 3 */
 
 #section-3 {
-  margin-top: 25vh;
+  padding-top: 25vh;
 }
 
 #section-3-des {
