@@ -31,19 +31,29 @@
     <!-- Header -->
 
     <header id="header" class="flex-center">
-      <div id="logo">
-        <img src="./assets/Images/logo.png" alt="logo" />
-      </div>
-      <nav id="nav" class="flex-center">
-        <ul id="nav-list" class="flex-center"></ul>
+      <div class="nav-container">
+        <div id="logo">
+          <img src="./assets/Images/logo.png" alt="logo" />
+        </div>
+        <nav id="nav" class="flex-center">
+          <ul id="nav-list" class="flex-center"></ul>
+        </nav>
         <button class="btn">Login</button>
-      </nav>
+        <div class="menu flex-center">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <main>
       <!-- Section 1 -->
 
-      <section id="section-1" data-nav="Company" class="flex-center" href="#company">
+      <section
+        id="section-1"
+        data-nav="Company"
+        class="flex-center"
+        href="#company"
+      >
         <div id="section-1-des">
           <h2 class="heading-2">Lorem ipsum dolor sit amet consectetur</h2>
           <p class="para">
@@ -62,7 +72,12 @@
 
       <!-- SECTION 2 -->
 
-      <section id="section-2" data-nav="Features" class="flex-column" href="#features">
+      <section
+        id="section-2"
+        data-nav="Features"
+        class="flex-column"
+        href="#features"
+      >
         <div id="section-2-des" class="flex-column">
           <h2 class="heading-2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,7 +118,12 @@
 
       <!-- SECTION 3 -->
 
-      <section id="section-3" data-nav="Pricing" class="flex-column" href="#priceing">
+      <section
+        id="section-3"
+        data-nav="Pricing"
+        class="flex-column"
+        href="#priceing"
+      >
         <div id="section-3-des" class="flex-column">
           <h2 class="heading-2">Lorem ipsum dolor sit amet consectetur.</h2>
           <p class="para">
@@ -118,7 +138,7 @@
         <div id="section-3-cards">
           <!-- Card 1 -->
 
-          <div class="section-3-card">
+          <div id="card-1" class="section-3-card">
             <h3 class="card-heading">Basic</h3>
             <p class="card-des">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -163,7 +183,7 @@
 
           <!-- Card 2 -->
 
-          <div class="section-3-card active-card">
+          <div id="card-2" class="section-3-card active-card">
             <h3 class="card-heading">Premium</h3>
             <p class="card-des">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.

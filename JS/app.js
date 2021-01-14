@@ -1,8 +1,8 @@
 // select elements
 const sections = document.querySelectorAll('section');
 const nav = document.querySelector('#nav-list');
-const header = document.querySelector('header');
-
+const header = document.querySelector('#header');
+const sliderMenu = document.getElementById('slider');
 
 
 // Build navbar
@@ -18,7 +18,9 @@ for (const section of sections) {
 
 document.addEventListener('readystatechange', () => {
   const liActive = document.querySelector('#section-1-nav');
-  liActive.classList.add('active')
+  if (window.pageYOffset === 0) {
+    liActive.classList.add('active')
+  }
 })
 
 
@@ -47,10 +49,15 @@ let prevScrollpos = window.pageYOffset;
 
 window.onscroll = () => {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
+  if(currentScrollPos <= 45) {
+    // adding active class at the top of page
+    const liActive = document.querySelector('#section-1-nav');
+    liActive.classList.add('active')
+    // show and hide header
+  } else if (prevScrollpos > currentScrollPos) {
     header.style.top = "0";
   } else {
-    header.style.top = "-60px";
+    header.style.top = "-45px";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -72,3 +79,16 @@ onScroll = () => {
 }
 
 document.addEventListener('scroll', onScroll);
+
+// adding slider
+
+const btn = document.querySelector('.menu');
+const navContainer = document.querySelector('#nav')
+
+btn.addEventListener('click', () => {
+  if (navContainer.style.top === "" ) {
+    navContainer.style.top = "-90px"
+  } else {
+    navContainer.style.top = ""
+  }
+})
